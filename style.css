@@ -21,6 +21,8 @@ body{
     top:0;
     left: 0%;
     width: 414px;;
+    z-index:1;
+    
 
 }
 
@@ -67,6 +69,8 @@ body{
     margin-left: 4%;
    
     
+   
+    
 }
 
 .options{
@@ -79,10 +83,12 @@ body{
 .option{
     
     height: 216px;
-    width: 172px;
+   
     background-color: #FFFFFF;
-    
+    border: solid 4px #FFFFFF;
     border-radius: 9px;
+    width: 172px;
+    position: relative;
     
 
 }
@@ -164,3 +170,11 @@ h3{
 }
 
 
+ion-icon{
+    color: green;
+    position: absolute;
+    right: 13px;
+    bottom: 16px;
+    font-size: 20px;
+    display: none;
+}
