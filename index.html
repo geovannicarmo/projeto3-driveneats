@@ -11,7 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css3?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,10 +37,10 @@
 
             <div class="options">
               
-               <div class="teste">
-
+               
+                    
                 
-                <div onclick="framgoveg()" id= "prato1" class="option" >
+                <div onclick="prato(this)" class="option" >
                     <img id="tt" src="/images/frango_yin_yang 1.png" alt="">
 
                     <h3>Frango Vegano</h3>
@@ -48,15 +48,37 @@
 
                     <p class="price">R$ 14,90</p>
 
-                    <ion-icon id="check1" name="checkmark-circle-outline"></ion-icon>
+                  
+
+                   <div class="check1">
+                    <ion-icon name="checkmark-circle-outline">1</ion-icon>
+                </div>
+
                 </div>
             
-            </div>
+            
 
-            <div class="teste">
+            
 
                 
-                <div onclick="macarronese()" id= "prato2" class="option" >
+                <div onclick="prato(this, 11.90)"  class="option" >
+                    <img id="tt" src="/images/frango_yin_yang 1.png" alt="">
+
+                    <h3>Frango Vegano</h3>
+                    <p class="ingredients">Frango de jaca</p>
+
+                    <p class="price">R$ 11,90</p>
+                    <div class="check1">
+                        <ion-icon name="checkmark-circle-outline">1</ion-icon>
+                    </div>
+                </div>
+            
+            
+
+           
+
+                
+                <div onclick="prato(this, 7.90)" class="option" >
                     <img id="tt" src="/images/frango_yin_yang 1.png" alt="">
 
                     <h3>Frango Vegano</h3>
@@ -64,110 +86,89 @@
 
                     <p class="price">R$ 7,90</p>
 
-                    <ion-icon id="check2" name="checkmark-circle-outline"></ion-icon>
-                </div>
+                    <div class="check1">
+                        <ion-icon name="checkmark-circle-outline">1</ion-icon>
+                    </div>
             
+           
+
+            
+              
+
+              
+
+
             </div>
 
-            <div class="teste">
+            
+
+            </div>
+
+        </div>
+
+
+        <div class="menu2">
+            <h2 class="font-righteous">Primeiro, seu prato</h2>
+
+            <div class="options">
+              
+               
+                    
+                
+                <div onclick="prato2(this, 14.90)" class="option" >
+                    <img id="tt" src="/images/frango_yin_yang 1.png" alt="">
+
+                    <h3>Guarapan</h3>
+                    <p class="ingredients">Frango de jaca</p>
+
+                    <p class="price">R$ 4,99</p>
+
+                  
+
+                   <div class="check1">
+                    <ion-icon name="checkmark-circle-outline">1</ion-icon>
+                </div>
+
+                </div>
+            
+            
+
+            
 
                 
-                <div onclick="vatapa()" id= "prato3" class="option" >
+                <div onclick="prato2(this, 11.90)"  class="option" >
                     <img id="tt" src="/images/frango_yin_yang 1.png" alt="">
 
                     <h3>Frango Vegano</h3>
                     <p class="ingredients">Frango de jaca</p>
 
                     <p class="price">R$ 11,90</p>
-
-                    <ion-icon id="check3" name="checkmark-circle-outline"></ion-icon>
+                    <div class="check1">
+                        <ion-icon name="checkmark-circle-outline">1</ion-icon>
+                    </div>
                 </div>
             
-            </div>
-
-            <div class="teste">
-                <div class="option">
-                    <img src="/images/frango_yin_yang 1.png" alt="">
-
-                    <h3>Frango Vegano</h3>
-                    <p class="ingredients">Frango de jaca</p>
-
-                    <p class="price">R$ 14,90</p>
-                </div>
-            </div>
-
-              
-
-
-            </div>
-
             
 
-        </div>
-
-        <div class="menu">
-            <h2 class="font-righteous">Primeiro, seu prato</h2>
-
-            <div class="options">
-              
-               <div class="teste">
+           
 
                 
-                <div onclick="framgoveg()" id= "prato1" class="option" >
+                <div onclick="prato2(this, 7.90)" class="option" >
                     <img id="tt" src="/images/frango_yin_yang 1.png" alt="">
 
                     <h3>Frango Vegano</h3>
-                    <p class="ingredients">Frango de jaca</p>
-
-                    <p class="price">R$ 14,90</p>
-
-                    <ion-icon id="check1" name="checkmark-circle-outline"></ion-icon>
-                </div>
-            
-            </div>
-
-            <div class="teste">
-
-                
-                <div onclick="macarronese()" id= "prato2" class="option" >
-                    <img id="tt" src="/images/frango_yin_yang 1.png" alt="">
-
-                    <h3>Macarronese</h3>
                     <p class="ingredients">Frango de jaca</p>
 
                     <p class="price">R$ 7,90</p>
 
-                    <ion-icon id="check2" name="checkmark-circle-outline"></ion-icon>
-                </div>
+                    <div class="check1">
+                        <ion-icon name="checkmark-circle-outline">1</ion-icon>
+                    </div>
             
-            </div>
+           
 
-            <div class="teste">
-
-                
-                <div onclick="vatapa()" id= "prato3" class="option" >
-                    <img id="tt" src="/images/frango_yin_yang 1.png" alt="">
-
-                    <h3>Vatapá</h3>
-                    <p class="ingredients">Vatapa</p>
-
-                    <p class="price">R$ 11,90</p>
-
-                    <ion-icon id="check3" name="checkmark-circle-outline"></ion-icon>
-                </div>
             
-            </div>
-
-            <div class="teste">
-                <div class="option">
-                    <img src="/images/frango_yin_yang 1.png" alt="">
-
-                    <h3>Frango Vegano</h3>
-                    <p class="ingredients">Frango de jaca</p>
-
-                    <p class="price">R$ 14,90</p>
-                </div>
-            </div>
+              
 
               
 
@@ -176,46 +177,74 @@
 
             
 
+            </div>
+
         </div>
 
 
-        <div class="menu">
+
+        <div class="menu3">
             <h2 class="font-righteous">Primeiro, seu prato</h2>
 
             <div class="options">
               
-               <div class="teste">
-                <div class="option">
-                    <img src="/images/frango_yin_yang 1.png" alt="">
+               
+                    
+                
+                <div onclick="prato3(this, 14.90)" class="option" >
+                    <img id="tt" src="/images/frango_yin_yang 1.png" alt="">
+
+                    <h3>Picole Cremoso</h3>
+                    <p class="ingredients">Frango de jaca</p>
+
+                    <p class="price">R$ 1,20</p>
+
+                  
+
+                   <div class="check1">
+                    <ion-icon name="checkmark-circle-outline">1</ion-icon>
+                </div>
+
+                </div>
+            
+            
+
+            
+
+                
+                <div onclick="prato3(this, 11.90)"  class="option" >
+                    <img id="tt" src="/images/frango_yin_yang 1.png" alt="">
 
                     <h3>Frango Vegano</h3>
                     <p class="ingredients">Frango de jaca</p>
 
-                    <p class="price">R$ 14,90</p>
+                    <p class="price">R$ 11,90</p>
+                    <div class="check1">
+                        <ion-icon name="checkmark-circle-outline">1</ion-icon>
+                    </div>
                 </div>
-            </div>
+            
+            
 
-            <div class="teste">
-                <div class="option">
-                    <img src="/images/frango_yin_yang 1.png" alt="">
+           
+
+                
+                <div onclick="prato3(this, 7.90)" class="option" >
+                    <img id="tt" src="/images/frango_yin_yang 1.png" alt="">
 
                     <h3>Frango Vegano</h3>
                     <p class="ingredients">Frango de jaca</p>
 
-                    <p class="price">R$ 14,90</p>
-                </div>
-            </div>
+                    <p class="price">R$ 7,90</p>
 
-            <div class="teste">
-                <div class="option">
-                    <img src="/images/frango_yin_yang 1.png" alt="">
+                    <div class="check1">
+                        <ion-icon name="checkmark-circle-outline">1</ion-icon>
+                    </div>
+            
+           
 
-                    <h3>Frango Vegano</h3>
-                    <p class="ingredients">Frango de jaca</p>
-
-                    <p class="price">R$ 14,90</p>
-                </div>
-            </div>
+            
+              
 
               
 
@@ -224,14 +253,17 @@
 
             
 
+            </div>
+
         </div>
+
 
       
+      
 
-    </div>
 
-    <div class="bottom" >
-            <div>
+    <div onclick="selecionado(this)" class="bottom" >
+            <div class="selecione">
                 <p>Selecione os 3 itens
             para fechar o pedido</p>
             </div>

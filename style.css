@@ -35,6 +35,8 @@ body{
     width:414px;
 }
 
+
+
 .bottom div{
     display: flex;
     
@@ -43,7 +45,7 @@ body{
 
 }
 
-.bottom p{
+.selecione{
     height:61px;
     width: 88%;
     background-color:#CBCBCB;
@@ -51,7 +53,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #FFFFFF;
+
 }
+
+.fechar{
+    background-color: #32B72F;
+}
+
 
 .container{
     padding-top: 96px;
@@ -65,13 +74,7 @@ body{
 
 }
 
-.teste{
-    margin-left: 4%;
-   
-    
-   
-    
-}
+
 
 .options{
     display: flex;
@@ -89,7 +92,8 @@ body{
     border-radius: 9px;
     width: 172px;
     position: relative;
-    
+    min-width: 172px;
+    margin-left: 16px;
 
 }
 
@@ -178,3 +182,24 @@ ion-icon{
     font-size: 20px;
     display: none;
 }
+
+.bordaverde{
+    border: solid 4px #32B72F;
+    border-radius: 9px;
+}
+
+
+
+.check ion-icon {
+    color: green;
+    position: absolute;
+    right: 13px;
+    bottom: 16px;
+    font-size: 20px;
+    display: inline;
+}
+
+
+
+
+

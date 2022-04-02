@@ -1,71 +1,164 @@
-let valorPrato=0;
+let cont1=0; 
+let cont2=0;
+let cont3=0;
+let total=0;
 
-let borda1 =  document.getElementById("prato1");
+let price1;
+let pratoprincipal;
 
-let check1 = document.getElementById("check1");
+let price2;
+let bebida;
 
-let borda2 =  document.getElementById("prato2");
+function prato (element){
 
-let check2 = document.getElementById("check2");
+    console.log(element)
+   console.log (element.querySelector(".options .price"))
 
-let borda3 =  document.getElementById("prato3");
+        a= element.querySelector(".options .price").innerHTML
+        b = (a.replace('R$ ',''))
+        price1=Number(b.replace(',','.'))
+        console.log(price1)
 
-let check3 = document.getElementById("check3");
+        pratoprincipal = element.querySelector(".options h3").innerHTML
 
-
-function removeSelecao(){
-
-    check1.style.display= "none"
-    borda1.style.borderColor= "#FFFFFF"
+       
     
-    check2.style.display= "none"
-    borda2.style.borderColor= "#FFFFFF"
+    const selected = document.querySelector(".menu .bordaverde")
 
-    check3.style.display= "none"
-    borda3.style.borderColor= "#FFFFFF"
+    
+    if(selected!==null){
+        selected.classList.remove("bordaverde")
+    }
 
-}
+    element.classList.add("bordaverde");
 
-function framgoveg()
-{
- 
- 
- removeSelecao()
+    
+    let teste = element.querySelector(".check1")
 
-    borda1.style.borderColor= "#32B72F"
-    check1.style.display= "block"
-    valorPrato=14.9
+    const outraCoisa = document.querySelector(".menu .check")
+
+    if(outraCoisa!==null){
+        outraCoisa.classList.remove("check")
+
+    }
+
+    teste.classList.toggle("check");    
     
    
+    cont1=1;
+    confirmar()
+}
+
+function prato2 (element, price){
+
+    console.log(element)
+    console.log (element.querySelector(".options .price"))
+ 
+         a= element.querySelector(".options .price").innerHTML
+         c = (a.replace('R$ ',''))
+         price2 = Number(c.replace(',','.'))
+         
+         console.log(a)
+ 
+         bebida = element.querySelector(".options h3").innerHTML
+    
+    
+    const selected = document.querySelector(".menu2 .bordaverde")
+    
+    if(selected!==null){
+        selected.classList.remove("bordaverde")
+    }
+
+    element.classList.add("bordaverde");
+
+    
+    let teste = element.querySelector(".check1")
+
+    const outraCoisa = document.querySelector(".menu2 .check")
+
+    if(outraCoisa!==null){
+        outraCoisa.classList.remove("check")
+
+    }
+
+    teste.classList.toggle("check");    
+    
+  
+    cont2=1
+    confirmar()
+}
+
+function prato3 (element, price){
+    
+    console.log(element)
+    console.log (element.querySelector(".options .price"))
+ 
+         a= element.querySelector(".options .price").innerHTML
+         c = (a.replace('R$ ',''))
+         price3 = Number(c.replace(',','.'))
+         
+         console.log(a)
+ 
+         sobremesa = element.querySelector(".options h3").innerHTML
+    
+    const selected = document.querySelector(".menu3 .bordaverde")
+    
+    if(selected!==null){
+        selected.classList.remove("bordaverde")
+    }
+
+    element.classList.add("bordaverde");
+
+    
+    let teste = element.querySelector(".check1")
+
+    const outraCoisa = document.querySelector(".menu3 .check")
+
+    if(outraCoisa!==null){
+        outraCoisa.classList.remove("check")
+
+    }
+
+    teste.classList.toggle("check");    
+    
+  
+    cont3=1;
+    confirmar()
+}
+
+
+function confirmar(){
+
+if(cont1!==0 && cont2!==0 && cont3!==0)
+{
+ 
+const fecha = document.querySelector(".selecione")
+fecha.innerHTML = "Fechar pedido";
+
+
+fecha.classList.add("fechar");
+
+
 
 }
 
-   
-
-function macarronese()
-{
- 
-   
-    removeSelecao()
-
-    borda2.style.borderColor= "#32B72F"
-    check2.style.display= "block"
-    valorPrato=7.90  
-
-
-
 }
 
-function vatapa()
+function selecionado(element){
+
+
+if(cont1!==0 && cont2!==0 && cont3!==0)
 {
- 
-   
-    removeSelecao()
+    
+    total= price1+price2+price3
 
-    borda3.style.borderColor= "#32B72F"
-    check3.style.display= "block"
-    valorPrato=11.90  
+    let msg=encodeURIComponent(Olá, gostaria de fazer o pedido:/n-Prato: ${pratoprincipal}/n-Bebida: ${bebida}- Sobremesa: ${sobremesa}Total: R$ ${total})
+
+    alert (msg)
+    
+    mensagem= `https://wa.me/999999999?text=${msg}`
 
 
-
+    window.open(mensagem);
+}
 }
