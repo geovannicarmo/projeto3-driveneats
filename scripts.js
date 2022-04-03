@@ -9,6 +9,7 @@ let pratoprincipal;
 let price2;
 let bebida;
 
+
 function prato (element){
 
     console.log(element)
@@ -150,13 +151,13 @@ function selecionado(element){
 if(cont1!==0 && cont2!==0 && cont3!==0)
 {
     
-    total= price1+price2+price3
+   total= (price1+price2+price3).toFixed(2)
 
-    let msg=encodeURIComponent(Olá, gostaria de fazer o pedido:/n-Prato: ${pratoprincipal}/n-Bebida: ${bebida}- Sobremesa: ${sobremesa}Total: R$ ${total})
+    let msg=encodeURIComponent(`Olá, gostaria de fazer o pedido:\n-Prato: ${pratoprincipal}\n-Bebida: ${bebida}\n-Sobremesa: ${sobremesa}\nTotal: R$ ${total}`)
 
-    alert (msg)
+   mgmg=
     
-    mensagem= `https://wa.me/999999999?text=${msg}`
+    mensagem= `https://wa.me/5531992733328?text=${msg}`
 
 
     window.open(mensagem);
