@@ -1,5 +1,5 @@
 body{
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 .font-righteous{
@@ -10,6 +10,8 @@ body{
    
     background-color: #E5E5E5;
     width: 414px;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -23,7 +25,8 @@ body{
     width: 414px;;
     z-index:1;
     color: #FFFFFF;
-    
+
+    box-shadow: 0 4px 5px #A6A6A6;
 
 }
 
@@ -127,7 +130,7 @@ h1{
 
 h2{
     height: 25px;
-    width:60.4%;
+    width:70%;
   
     font-size: 26px;
     

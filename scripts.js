@@ -150,10 +150,13 @@ function selecionado(element){
 
 if(cont1!==0 && cont2!==0 && cont3!==0)
 {
+
+    let nome = prompt("Qual o seu nome?")
+    let endereco = prompt("Qual o seu endereço?")
     
    total= (price1+price2+price3).toFixed(2)
 
-    let msg=encodeURIComponent(`Olá, gostaria de fazer o pedido:\n-Prato: ${pratoprincipal}\n-Bebida: ${bebida}\n-Sobremesa: ${sobremesa}\nTotal: R$ ${total}`)
+    let msg=encodeURIComponent(`Olá, gostaria de fazer o pedido:\n- Prato: ${pratoprincipal}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\nTotal: R$ ${total}\n\nNome: ${nome}\nEndereço: ${endereco}`)
 
    mgmg=
     
